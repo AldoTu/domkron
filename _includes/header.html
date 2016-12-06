@@ -1,0 +1,10 @@
+<header>
+  <a href="{{ site.baseurl }}/"><img src="/assets/img/logo.png" alt="logo"></a>
+  {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <a class="link-container" href="{{ my_page.url | prepend: site.baseurl }}" style="text-decoration:none"><div class="page-link">
+      {{ my_page.title }}
+    </div></a>
+    {% endif %}
+  {% endfor %}
+</header>
