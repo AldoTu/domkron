@@ -3,6 +3,8 @@ body
   margin: 0
 
 .page-container
+  position: absolute
+  bottom: 0
   width: 100vw
   height: 100vh
   background:
@@ -10,6 +12,7 @@ body
     position: center
     size: cover
     repeat: no-repeat
+  box-shadow: 25px 20px 5px #20211F
 
   h1
     position: relative
@@ -21,9 +24,17 @@ body
     font-style: $primary-typography
     left: -850px
 
+  img
+    position: absolute
+    right: 30px
+    bottom: 30px
+    overflow: visible
+
+
 header
   display: flex
   flex-direction: row
+  z-index: 10
   width: 100vw
   height: 105px
   background-color: rgba(0, 0, 0, 0.5)
@@ -48,10 +59,134 @@ header
 footer
   position: fixed
   width: 100vw
-  height: 300px
+  height: 200px
   bottom: 0
   z-index: -1
-  background-color: #B1AFB2
+  background-color: #383B36
 
   h5
     text-align: center
+    color: white
+
+  #net
+    font-size: 15px
+
+  .nets
+    display: flex
+    flex-direction: row
+    margin: 0 auto
+
+.info-container
+  position: absolute
+  z-index: 5
+  width: 100vw
+  height: 100vh
+  background-color: #4CC1CC
+  overflow: hidden
+
+  h1
+    font-size: 65px
+    color: white
+    margin: 11% 100px
+    margin-bottom: 20px
+
+  h3
+    position: absolute
+    right: 25vw
+    top: 40vh
+    font-size: 40px
+    color: white
+
+  #tel_uno
+    position: absolute
+    right: 20vw
+    top: 52vh
+    color: white
+    font-size: 30px
+
+  #tel_dos
+    position: absolute
+    right: 20vw
+    top: 57vh
+    color: white
+    font-size: 30px
+
+  #tel_tres
+    position: absolute
+    right: 20vw
+    top: 62vh
+    color: white
+    font-size: 30px
+
+form
+  width: 40%
+  height: 50%
+  //margin: 15% 60px
+  margin-left: 60px
+
+  input
+    width: 30%
+    padding: 20px
+    border-radius: 5px
+    margin: 3px
+    border: 1px solid #758C7D
+    color: white
+    font-size: 15px
+    background-color: #3B3935
+
+  textarea
+    width: 90%
+    padding: 20px
+    border-radius: 5px
+    margin: 3px
+    color: white
+    font-size: 15px
+    background-color: #3B3935
+
+  button
+    padding: 0 auto
+    margin: 3px
+    min-width: 150px
+    border-radius: 5px
+    background-color: #3B3935
+
+    p
+      color: white
+      font-size: 15px
+
+fieldset
+  border: 4px solid #758C7D
+  border-radius: 5px
+
+  legend
+    color: white
+    margin-left: 10px
+    margin-right: 10px
+    font-size: 24px
+
+.prod-container
+  width: 100vw
+
+  .red
+    height: 60vh
+    background-color: #CC0000
+
+  .grey
+    height: 60vh
+    background-color: grey
+
+  .yellow
+    height: 60vh
+    background-color: #CCD200
+
+  .black
+    height: 60vh
+    background-color: black
+
+  .green
+    height: 60vh
+    background-color: green
+
+  .orange
+    height: 60vh
+    background-color: #EA510B
